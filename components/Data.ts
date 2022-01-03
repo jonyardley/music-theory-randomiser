@@ -9,4 +9,10 @@ export const Intervals = [
   { name: 'seventh', quality: ['diminished', 'major', 'minor'] },
   { name: 'octave', quality: ['perfect'] }
 ];
-// export const ChordQuality = ['major', 'minor', 'diminished'];
+export const ChordQuality = [
+  'major',
+  'minor',
+  'dominant seventh',
+  'minor seventh',
+  'diminished seventh'
+];
