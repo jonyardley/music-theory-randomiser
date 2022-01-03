@@ -11,12 +11,14 @@ const RandomKey = () => {
 
 const KeysTab = () => {
   const [randomKey, setRandomKey] = useState(RandomKey());
-  return [
-    <Typography variant="h1">{randomKey}</Typography>,
-    <Button variant="contained" onClick={() => setRandomKey(RandomKey())}>
-      New key
-    </Button>
-  ];
+  return (
+    <div>
+      <Typography variant="h1">{randomKey}</Typography>,
+      <Button variant="contained" onClick={() => setRandomKey(RandomKey())}>
+        New key
+      </Button>
+    </div>
+  );
 };
 
 export default KeysTab;
