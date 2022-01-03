@@ -1,5 +1,6 @@
 import { Box, Tabs, Tab, Typography } from '@mui/material';
 import { SyntheticEvent, useState } from 'react';
+import IntervalsTab from './IntervalsTab';
 import KeysTab from './KeysTab';
 
 interface TabPanelProps {
@@ -48,7 +49,7 @@ const ModeTabs = () => {
         <KeysTab />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        [TODO]
+        <IntervalsTab />
       </TabPanel>
       <TabPanel value={value} index={2}>
         [TODO]
