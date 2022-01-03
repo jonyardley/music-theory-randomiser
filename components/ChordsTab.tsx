@@ -1,5 +1,5 @@
 import { Typography, Button } from '@mui/material';
-import { Accidentals, ChordQuality, Intervals, Notes } from './Data';
+import { Accidentals, ChordQuality, Notes } from './Data';
 import { sample } from 'lodash';
 import { useState } from 'react';
 
