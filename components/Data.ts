@@ -1,5 +1,35 @@
 export const Notes = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
-export const Accidentals = ['', '#', 'b'];
+export const Accidentals = ['', '#', '♭'];
+export const Keys = [
+  'C♭ major',
+  'G♭ major',
+  'D♭ major',
+  'A♭ major',
+  'E♭ major',
+  'B♭ major',
+  'F major',
+  'C major',
+  'G major',
+  'D major',
+  'A major',
+  'E major',
+  'B major',
+  'F# major',
+  'C# major',
+  'a minor',
+  'e minor',
+  'b minor',
+  'f# minor',
+  'c# minor',
+  'g# minor',
+  'd# minor',
+  'e♭ minor',
+  'b♭ minor',
+  'f minor',
+  'c minor',
+  'g minor',
+  'd minor'
+];
 export const Intervals = [
   { name: 'second', quality: ['major', 'minor', 'augmented'] },
   { name: 'third', quality: ['major', 'minor'] },

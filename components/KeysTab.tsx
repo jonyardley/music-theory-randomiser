@@ -1,12 +1,11 @@
 import { Typography, Button } from '@mui/material';
-import { Accidentals, Notes } from './Data';
+import { Keys } from './Data';
 import { sample } from 'lodash';
 import { useState } from 'react';
 
 const RandomKey = () => {
-  const tonic = sample(Notes);
-  const accidental = sample(Accidentals);
-  return `${tonic}${accidental}`;
+  const key = sample(Keys);
+  return `${key}`;
 };
 
 const KeysTab = () => {
