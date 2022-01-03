@@ -1,9 +1,11 @@
-import Button from '@mui/material/Button';
+import { Container, Typography } from '@mui/material';
+import ModeTabs from '../components/ModeTabs';
 
-export default function Home() {
-  return (
-    <div>
-      <Button variant="contained">Hello World</Button>
-    </div>
-  );
-}
+const Home = () => (
+  <Container maxWidth="xl">
+    <Typography variant="h3">Music Theory Randomiser</Typography>
+    <ModeTabs />
+  </Container>
+);
+
+export default Home;
