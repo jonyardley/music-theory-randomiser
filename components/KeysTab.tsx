@@ -8,6 +8,6 @@ const RandomKey = () => {
   return `${tonic}${accidental}`;
 };
 
-const KeysTab = () => <Typography variant="h3">{RandomKey()}</Typography>;
+const KeysTab = () => <Typography variant="h1">{RandomKey()}</Typography>;
 
 export default KeysTab;
