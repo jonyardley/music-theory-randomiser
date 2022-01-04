@@ -46,3 +46,33 @@ export const ChordQuality = [
   'minor seventh',
   'diminished seventh'
 ];
+export const KEYS = [
+  { name: 'Cb', type: 'major' },
+  { name: 'Gb', type: 'major' },
+  { name: 'Db', type: 'major' },
+  { name: 'Ab', type: 'major' },
+  { name: 'Eb', type: 'major' },
+  { name: 'Bb', type: 'major' },
+  { name: 'F', type: 'major' },
+  { name: 'C', type: 'major' },
+  { name: 'G', type: 'major' },
+  { name: 'D', type: 'major' },
+  { name: 'A', type: 'major' },
+  { name: 'E', type: 'major' },
+  { name: 'B', type: 'major' },
+  { name: 'F#', type: 'major' },
+  { name: 'C#', type: 'major' },
+  { name: 'A', type: 'minor' },
+  { name: 'E', type: 'minor' },
+  { name: 'B', type: 'minor' },
+  { name: 'F#', type: 'minor' },
+  { name: 'C#', type: 'minor' },
+  { name: 'G#', type: 'minor' },
+  { name: 'D#', type: 'minor' },
+  { name: 'Eb', type: 'minor' },
+  { name: 'Bb', type: 'minor' },
+  { name: 'F', type: 'minor' },
+  { name: 'C', type: 'minor' },
+  { name: 'G', type: 'minor' },
+  { name: 'D', type: 'minor' }
+];

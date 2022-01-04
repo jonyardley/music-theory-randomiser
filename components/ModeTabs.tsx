@@ -3,6 +3,7 @@ import { SyntheticEvent, useState } from 'react';
 import ChordsTab from './ChordsTab';
 import IntervalsTab from './IntervalsTab';
 import KeysTab from './KeysTab';
+import ExerciseSheet from './ExerciseSheet';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -41,18 +42,22 @@ const ModeTabs = () => {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange}>
+          <Tab label="Exercise Sheet" />
           <Tab label="Keys" />
           <Tab label="Intervals" />
           <Tab label="Chords" />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <KeysTab />
+        <ExerciseSheet />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <IntervalsTab />
+        <KeysTab />
       </TabPanel>
       <TabPanel value={value} index={2}>
+        <IntervalsTab />
+      </TabPanel>
+      <TabPanel value={value} index={3}>
         <ChordsTab />
       </TabPanel>
     </Box>
