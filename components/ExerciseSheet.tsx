@@ -35,7 +35,7 @@ const randomChordsFromKey = (key: any, num: number) => {
 const ExerciseSheet = () => {
   return (
     <div>
-      <Typography variant="h2" mb={2}>
+      <Typography variant="h4" mb={2}>
         Exercise Sheet
       </Typography>
       <Typography mb={2}>
@@ -44,7 +44,7 @@ const ExerciseSheet = () => {
 
       {randomKeys(4).map((key) => (
         <div>
-          <Typography variant="h5">
+          <Typography variant="h6">
             {key.tonic} {key.type}
           </Typography>
           <Typography>Intervals</Typography>
