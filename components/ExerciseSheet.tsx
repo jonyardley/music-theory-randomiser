@@ -43,14 +43,14 @@ const ExerciseSheet = () => {
       </Typography>
 
       {randomKeys(4).map((key) => (
-        <div>
+        <div key={`${key.tonic}-${key.type}`}>
           <Typography variant="h6">
             {key.tonic} {key.type}
           </Typography>
           <Typography>Intervals</Typography>
           <ol>
-            {[...Array(6)].map(() => (
-              <li>
+            {[...Array(6)].map((v, i) => (
+              <li key={`${v}-${i}`}>
                 <Typography>{randomInterval()}</Typography>
               </li>
             ))}
@@ -58,8 +58,8 @@ const ExerciseSheet = () => {
 
           <Typography>Chords</Typography>
           <ol>
-            {randomChordsFromKey(key, 6).map((chord) => (
-              <li>
+            {randomChordsFromKey(key, 6).map((chord, i) => (
+              <li key={`${chord}-${i}`}>
                 <Typography>{chord}</Typography>
               </li>
             ))}
