@@ -42,23 +42,23 @@ const ModeTabs = () => {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange}>
-          <Tab label="Exercise Sheet" />
           <Tab label="Keys" />
           <Tab label="Intervals" />
           <Tab label="Chords" />
+          <Tab label="Exercise Sheet" />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <ExerciseSheet />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
         <KeysTab />
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={1}>
         <IntervalsTab />
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={2}>
         <ChordsTab />
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <ExerciseSheet />
       </TabPanel>
     </Box>
   );
