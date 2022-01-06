@@ -76,3 +76,4 @@ export const KEYS = [
   { name: 'G', type: 'minor' },
   { name: 'D', type: 'minor' }
 ];
+export const Inversions = ['Root position', '1st inversion', '2nd inversion'];

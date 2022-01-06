@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import { Key } from '@tonaljs/tonal';
 import { sampleSize, sample, union, compact } from 'lodash';
-import { Accidentals, Intervals, KEYS, Notes } from './Data';
+import { Accidentals, Intervals, Inversions, KEYS, Notes } from './Data';
 
 const randomKeys = (num: number) => {
   const keyObjects = sampleSize(KEYS, num);
@@ -47,7 +47,7 @@ const ExerciseSheet = () => {
           <Typography variant="h6">
             {key.tonic} {key.type}
           </Typography>
-          <Typography>Intervals</Typography>
+          <Typography>Intervals:</Typography>
           <ol>
             {[...Array(6)].map((v, i) => (
               <li key={`${v}-${i}`}>
@@ -56,11 +56,13 @@ const ExerciseSheet = () => {
             ))}
           </ol>
 
-          <Typography>Chords</Typography>
+          <Typography>Chords:</Typography>
           <ol>
             {randomChordsFromKey(key, 6).map((chord, i) => (
               <li key={`${chord}-${i}`}>
-                <Typography>{chord}</Typography>
+                <Typography>
+                  {chord} - <i>{sample(Inversions)}</i>
+                </Typography>
               </li>
             ))}
           </ol>
